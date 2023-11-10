@@ -46,8 +46,11 @@
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="#jogos">Jogos</a></li>
           <li><a href="#team">Equipe</a></li>
-          <li><button onclick="toggleDarkMode()" class="btn-get-started">Modo Escuro</button></li>
-          <button onclick="readContent()">Ouvir Conteúdo</button>
+          
+          <li><button id="darkModeButton" onclick="toggleDarkMode()">Modo Escuro</button>
+            <button id="lightModeButton" style="display: none;" onclick="toggleLightMode()">Modo Claro</button>
+            <button id="startButton" onclick="startReading()">Iniciar Narração</button>
+            <button id="stopButton" onclick="stopReading()" style="display: none;">Parar Narração</button>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -76,11 +79,11 @@
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="assets/img/Autismo.jpg.crdownload" class="img-fluid" alt="">
+            <img src="assets/img/WhatsApp Image 2023-11-10 at 11.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
             <div class="section-title">
-              <p> Quem somos</p>
+              <p>Quem somos? </p>
             </div>
     
               Somos um projeto focado em auxiliar crianças com Transtorno do Espectro Autista (TEA) em fase de alfabetização.
@@ -260,7 +263,7 @@
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <a href="https://scratch.mit.edu/projects/903824210/fullscreen/"><h4>JOGAR</h4></a>
                 </div>
-                <h3><a href="course-details.html">Corrida de Monstros</a></h3>
+                <h3><a href="https://scratch.mit.edu/projects/903824210/fullscreen/">Corrida de Monstros</a></h3>
                 <p>Esse jogo foi feito para crianças autistas de nível 1, onde tem como objetivo desenvolver a capacidade motora da</p>
               </div>
             </div>
@@ -274,7 +277,7 @@
                   <a href="https://www.educaplay.com/learning-resources/16673794-caca_palavras.html "><h4>JOGAR</h4></a>
                 </div>
 
-                <h3><a href="course-details.html">Caça Palavras</a></h3>
+                <h3><a href="https://www.educaplay.com/learning-resources/16673794-caca_palavras.html">Caça Palavras</a></h3>
                 <p>Esse jogo foi feito para crianças autistas de nível 2, onde tem por objetivo incentivar a criança a procurar pelas palavras e desenvolver seu intelecto. </p>
               </div>
             </div>
@@ -289,7 +292,7 @@
                   <a href= "https://scratch.mit.edu/projects/2318211/fullscreen/" ><h4>JOGAR</h4></a>
                 </div>
 
-                <h3><a href="course-details.html">Nome dos Animais</a></h3>
+                <h3><a href="https://scratch.mit.edu/projects/2318211/fullscreen/">Nome dos Animais</a></h3>
                 <p>Esse jogo foi feito para crianças autista de nível 3 e tem como intenção desenvolver um momento entre pais e a criança, ajudando ela a identificar os animais e escrever seus respectivos nomes, desenvolvendo assim sua capacidade de indentificação de figuras e familiarização com a escrita e fala.</p>
               </div>
             </div>
@@ -313,8 +316,6 @@
     <div class="time" data-aos="fade-up">
       
       <div class="container_time">
-        <button class="arrow-left " aria-label="Previous image"></button>
-        <button class="arrow-right " aria-label="Next Image"></button>
         <div class="gallery-wrapper">
           <div class="row gy-4 content_team gallery">
 
@@ -395,6 +396,21 @@
 
   </main>
 
+   <!-- Vlibras -->
+  
+   <section id="Vlibras">
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+  </section>
+
 <!-- ======= Footer ======= -->
 <footer id="footer">
 
@@ -419,22 +435,11 @@
       <a href="https://www.instagram.com/alfakids.mcm/" class="instagram"><i class="bx bxl-instagram"></i></a>
     </div>
   </div>
+
+ 
 </footer><!-- End Footer -->
 
-<!-- Vlibras -->
-  
-    <section id="Vlibras">
-      <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
-        </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
-    </section>
+
 
 
 <div id="preloader"></div>
