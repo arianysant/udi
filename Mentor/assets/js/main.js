@@ -146,7 +146,7 @@ controls.forEach((control) => {
   });
 });
 
-setInterval(timer, 7500);
+setInterval(timer, 1500);
 function timer(){
     currentItem += 1
 
@@ -160,4 +160,17 @@ function timer(){
     items.forEach((item) => item.classList.remove("current-item"));
 
     items[currentItem].classList.add("current-item");
+}
+
+function toggleDarkMode() {
+  const body = document.body;
+  body.classList.toggle('dark-mode');
+}
+
+function readContent() {
+  const content = document.querySelector('body').innerText;
+  const speech = new SpeechSynthesisUtterance(content);
+  speech.lang = 'pt-BR'; // Define o idioma para Português do Brasil
+  speech.rate = 1; // Velocidade da fala (0.1 a 10)
+  window.speechSynthesis.speak(speech);
 }

@@ -14,6 +14,32 @@ body {
   color: #444444;
 }
 
+/*--------------------------------------------------------------
+# Modo black
+--------------------------------------------------------------*/
+button {
+  padding: 6px 6px;
+  font-size: 16px;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: 20px;
+  
+}
+
+button:hover {
+  background: #54c9dd;
+  border: 1px solid #54c9dd;
+}
+
+body.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+/* --------------------------------------------- */
+
 a {
   color: #54c9dd;
   text-decoration: none;
@@ -516,7 +542,7 @@ section {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #9ae1af;
+  background: #54C9DD;
   margin: 4px 10px;
 }
 
@@ -527,16 +553,17 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #37423b;
+  color: #54C9DD;
 }
 
 .breadcrumbs {
   margin-top: 73px;
   text-align: center;
-  background: #54c9dd;
+  background: url(../img/quebra.png);
   padding: 30px 0;
   color: #fff;
 }
+
 
 @media (max-width: 992px) {
   .breadcrumbs {
@@ -863,7 +890,7 @@ section {
 }
 .team .member {
   text-align: center;
-  background: url("../img/gira.png");
+  background-color: #54C9DD;
   border-radius: 10px;
   padding: 15px;
   overflow: hidden;
@@ -1060,7 +1087,7 @@ section {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #c1ecce;
+  color: #54C9DD;
   font-size: 26px;
 }
 
@@ -1320,12 +1347,11 @@ section {
 #footer {
   color: #37423b;
   font-size: 14px;
-  background: #eef0ef;
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #f9faf9;
+  background: url(../img/quebra.png);
 }
 
 #footer .footer-top .footer-contact {
@@ -1392,7 +1418,7 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #54c9dd;
+  background-image: url(../img/quebra.png);
 }
 
 #footer .footer-newsletter {
