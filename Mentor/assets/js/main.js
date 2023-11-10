@@ -162,15 +162,49 @@ function timer(){
     items[currentItem].classList.add("current-item");
 }
 
-function toggleDarkMode() {
-  const body = document.body;
-  body.classList.toggle('dark-mode');
+// function toggleDarkMode() {
+//   const body = document.body;
+//   body.classList.toggle('dark-mode');
+// }
+
+let synth = window.speechSynthesis;
+let utterance = new SpeechSynthesisUtterance();
+let darkMode = true;
+
+function startReading() {
+  const content = document.querySelector('body').innerText;
+  utterance.text = content;
+  utterance.lang = 'pt-BR';
+  utterance.rate = 1;
+  synth.speak(utterance);
+  document.getElementById('startButton').style.display = 'none';
+  document.getElementById('stopButton').style.display = 'inline-block';
 }
 
-function readContent() {
-  const content = document.querySelector('body').innerText;
-  const speech = new SpeechSynthesisUtterance(content);
-  speech.lang = 'pt-BR'; // Define o idioma para Português do Brasil
-  speech.rate = 1; // Velocidade da fala (0.1 a 10)
-  window.speechSynthesis.speak(speech);
+function stopReading() {
+  if (synth.speaking) {
+    synth.cancel();
+    document.getElementById('stopButton').style.display = 'none';
+    document.getElementById('startButton').style.display = 'inline-block';
+  }
+}
+
+function toggleDarkMode() {
+  const darkModeButton = document.getElementById('darkModeButton');
+  const lightModeButton = document.getElementById('lightModeButton');
+  darkModeButton.style.display = 'none';
+  lightModeButton.style.display = 'inline-block';
+  const body = document.body;
+  body.classList.toggle('dark-mode');
+  darkMode = false;
+}
+
+function toggleLightMode() {
+  const darkModeButton = document.getElementById('darkModeButton');
+  const lightModeButton = document.getElementById('lightModeButton');
+  darkModeButton.style.display = 'inline-block';
+  lightModeButton.style.display = 'none';
+  const body = document.body;
+  body.classList.toggle('dark-mode');
+  darkMode = true;
 }

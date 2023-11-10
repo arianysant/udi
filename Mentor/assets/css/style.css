@@ -15,7 +15,7 @@ body {
 }
 
 /*--------------------------------------------------------------
-# Modo black
+# Modo dark
 --------------------------------------------------------------*/
 button {
   padding: 6px 6px;
@@ -83,7 +83,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #7ed899;
+  background: #54c9dd;
   color: #fff;
 }
 
@@ -92,6 +92,9 @@ h6 {
   opacity: 1;
 }
 
+h4{
+  color: #54c9dd;
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -584,6 +587,12 @@ section {
 /*--------------------------------------------------------------
 # Sobre
 --------------------------------------------------------------*/
+
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
@@ -746,7 +755,7 @@ section {
 }
 
 .features .icon-box h3 a {
-  color: #37423b;
+  color: rgb(58, 48, 148);
   transition: 0.3s;
 }
 
@@ -776,7 +785,7 @@ section {
 }
 
 .courses .course-content h3 a {
-  color: #37423b;
+  color: #1d64ce;
   transition: 0.3s;
 }
 
@@ -904,11 +913,13 @@ section {
   padding: 0 20px 30px 20px;
 }
 .team .member h4 {
+
   font-weight: 700;
   margin-top: 16px;
   margin-bottom: 2px;
   font-size: 20px;
 }
+
 .team .member span {
   font-style: italic;
   display: block;
@@ -970,6 +981,11 @@ section {
 .icon:hover{
   animation: shake 0.25s;
 }
+
+.team .member h3{
+  color: #fff;
+}
+
 /* Carousel team */
 .container_time {
   position: relative;
@@ -1059,15 +1075,14 @@ section {
   padding: 30px 30px 30px 60px;
   margin: 30px 15px;
   min-height: 200px;
-  border: 1px solid #eef0ef;
+  border: 1px solid #54C9DD;
   position: relative;
-  background: #fff;
+  background:rgba(148, 193, 201, 0.404)
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 90px;
+  width: 50px;
   border-radius: 10px;
-  border: 6px solid #fff;
   position: absolute;
   left: -45px;
 }
@@ -1107,6 +1122,7 @@ section {
 .testimonials .testimonial-item p {
   font-style: italic;
   margin: 15px auto 15px auto;
+  color: #44acbe;
 }
 
 .testimonials .swiper-pagination {
@@ -1503,3 +1519,4 @@ section {
   color: #fff;
   text-decoration: none;
 }
+
