@@ -587,7 +587,11 @@ section {
 /*--------------------------------------------------------------
 # Sobre
 --------------------------------------------------------------*/
+.imgconfig{
+  max-width: 90%;
+  height: 100%;
 
+}
 
 .img-fluid {
   max-width: 100%;
@@ -1091,7 +1095,7 @@ section {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #111;
+  color: #000000;
 }
 
 .testimonials .testimonial-item h4 {
